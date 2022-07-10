@@ -1,8 +1,102 @@
 ---
 ---
-
 html,
 body {
   width: 100%;
   height: 100%;
 }
+
+main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url("assets/bg_landscape.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25%;
+  color: white;
+  overflow: hidden;
+}
+
+.follow-us-modal {
+  background: transparent !important;
+
+  --bs-modal-width: 320px !important;
+  --bs-modal-bg: transparent !important;
+  --bs-modal-border-color: transparent !important;
+}
+
+.neon-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-bottom: -1.25rem;
+    width: 100%;
+  }
+
+  &.instagram img {
+    left: -34% !important;
+    width: 160% !important;
+  }
+
+  &.email img {
+    left: -32% !important;
+    width: 155% !important;
+  }
+
+  &.follow-us img,
+  &.whatsapp img {
+    left: -30% !important;
+    width: 150% !important;
+  }
+
+  &.instagram,
+  &.email,
+  &.whatsapp,
+  &.follow-us {
+    a {
+      text-transform: none !important;
+    }
+  }
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    //font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    z-index: 10;
+  }
+}
+
+.nav-links {
+  position: absolute;
+  right: 3rem;
+  top: 0;
+  display: none;
+}
+
+@media (min-width: 767px) {
+  .nav-links {
+    display: flex !important;
+  }
+
+  .follow-us {
+    display: none !important;
+  }
+}
+
+
