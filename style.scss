@@ -90,6 +90,10 @@ main {
   display: none;
 }
 
+.pb-250 {
+  padding-bottom: 300px;
+}
+
 @media (min-width: 767px) {
   .nav-links {
     display: flex !important;
